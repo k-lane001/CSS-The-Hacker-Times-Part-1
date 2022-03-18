@@ -34,6 +34,7 @@ ul li {
 a {
     color: #777;
     font-size: .9em;
+    font-weight: lighter;
     text-decoration: none;
     text-align: center;
     padding: 0em 0em 0em .75em;
@@ -67,11 +68,28 @@ footer span {
 }
 .third-section-articles {
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
 }
 .third-section-articles > span {
     display: inline-block;
-    width: 220px;
+    width: 230px;
     text-align: center;
     font-family: Roboto Slab;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch;
+
+}
+.grid-wrapper > h4 {
+    padding: 1em;
+    background-color: #eee;
+    margin: 0;
+    text-align:center;
+}
+.grid-wrapper > h4:nth-child(odd) {
+    background-color:#ddd;
 }
